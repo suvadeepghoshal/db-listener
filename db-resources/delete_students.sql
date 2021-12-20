@@ -1,0 +1,1 @@
+DELETE FROM students WHERE roll_num=2;

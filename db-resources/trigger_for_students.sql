@@ -1,0 +1,3 @@
+CREATE TRIGGER table_change
+AFTER INSERT OR UPDATE OR DELETE ON students
+  FOR EACH ROW EXECUTE PROCEDURE public.notify_change_mod();
