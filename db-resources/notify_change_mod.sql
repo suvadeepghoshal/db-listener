@@ -1,3 +1,4 @@
+-- This stored procedure handles insert, update and delete criteria explictly
 CREATE OR REPLACE FUNCTION public.notify_change_mod() RETURNS TRIGGER AS $$
 BEGIN
 	IF (TG_OP = 'DELETE') THEN
